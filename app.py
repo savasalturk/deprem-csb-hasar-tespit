@@ -62,7 +62,7 @@ with st.sidebar:
 
 st.write("HeatMap: Filtrelere göre hasar tespiti yapılan binalar.")
 
-m = folium.Map()
+m = folium.Map(max_zoom=16)
 
 folium.TileLayer(
         tiles='http://mt0.google.com/vt/lyrs=y&hl=en&x={x}&y={y}&z={z}',
