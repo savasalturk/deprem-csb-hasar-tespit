@@ -55,8 +55,10 @@ with st.sidebar:
         durumlar = df["aciklama"].unique().tolist()
 
 
-
-    filtre_durum = st.multiselect("Bina Durumu: ",durumlar,default=['Yıkık','Acil Yıktırılacak', 'Ağır Hasarlı'])
+    try:
+        filtre_durum = st.multiselect("Bina Durumu: ",durumlar,default=['Yıkık','Acil Yıktırılacak', 'Ağır Hasarlı'])
+    except:
+        filtre_durum = st.multiselect("Bina Durumu: ",durumlar)
     if filtre_durum:
         df = df[df["aciklama"].isin(filtre_durum)]
 
