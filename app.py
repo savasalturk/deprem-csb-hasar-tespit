@@ -69,7 +69,7 @@ folium.TileLayer(
         attr='Google Terrain',
         name='Google Satellite',
         overlay=True,
-        show=True
+        show=True,max_zoom=16
         ).add_to(m)
 df = df[df["x"].isna()==False]
 coor = [[i["y"],i["x"]] for _,i in df.iterrows()]
