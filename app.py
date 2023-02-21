@@ -6,7 +6,7 @@ from folium.plugins import HeatMap
 
 
 st.set_page_config(layout="wide")
-st.sidebar.info(""" Çevre ve Şehircilik Bakanlığı - Hasar Tespit
+st.sidebar.info(""" Çevre ve Şehircilik Bakanlığı - Hasar Tespit\n
         Bu uygulama https://hasartespit.csb.gov.tr/ sitesinde paylaşılan hasar tespiti yapılmış binaların durumunu göstermek amacıyla yapılmıştır.
     """)
 
