@@ -12,7 +12,7 @@ st.sidebar.info(""" Çevre ve Şehircilik Bakanlığı - Hasar Tespit
 
 @st.cache
 def data():
-    df = pd.read_parquet("data/bina_tespit.parquet.gzip")
+    df = pd.read_parquet("data/binatespit.parquet.gzip")
     return df
 df = data()
 
