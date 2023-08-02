@@ -11,7 +11,7 @@ st.sidebar.info(""" Çevre ve Şehircilik Bakanlığı - Hasar Tespit
 st.sidebar.info("""
         Bu uygulama https://hasartespit.csb.gov.tr/ sitesinde paylaşılan hasar tespiti yapılmış binaların durumunu göstermek amacıyla yapılmıştır.
     """)
-@st.cache
+@st.cache_data
 def data():
     df = pd.read_parquet("data/binatespit.parquet.gzip")
     return df
